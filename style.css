@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/05/19/1902881-yash-kgf-chapter-2-8.jpg");
+    height: 100vh;
+    width : 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    list-style-type: none;
+    float: right;
+margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:rgb(155, 225, 109);
+    padding: 5px 20px ;
+    border: 1px solid transparent rgb(113, 8, 99);
+    background-color: red;
+}
+ul li a:hover{
+    color: aqua;
+ transition: 0.5s;
+    background-color: white;
+
+}
+.logo img{
+    height: auto;
+    float: left;
+    width: 166px;
+}
+.marquee{
+
+color: rgb(205, 30, 30);
+background-color: yellow;  
+}
+.kk{
+    text-align: center;
+    color: palevioletred;
+    animation: pp 3s infinite;  
+    
+}
+@keyframes pp {
+    0%{
+        color: green;
+        background-color: coral;
+        font-size: 50px;
+        transform: rotate3d(2,2,2,60deg);
+    }
+    50%{
+        color: rgb(46, 173, 198);
+        background-color: rgb(223, 241, 143);
+        font-size: 50px;
+        transform: rotate3d(2,2,2,-73deg);
+
+    }
+    100%{
+        color: rgb(70, 222, 149);
+        background-color: rgb(162, 33, 23);
+        font-size: 50px;
+        transform: rotate3d(2,2,2,680deg);
+
+    }
+}
+
+.loader-wrapper{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.loader{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #162534;
+    border-top-color: #4bc8eb;
+    border-bottom-color: #f13a8f;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+
+}
+
+.loader-inner{
+    border-top-color: #36f372;
+    border-bottom-color: #fff;
+    animation-duration: 2.5s;
+}
+
+@keyframes rotate {
+    0%{
+        transform: scale(1) rotate(360deg);
+
+    }
+    50%{
+        transform: scale(.8) rotate(-360deg);
+
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+
+    }
+}
+footer{
+        font-size: 50px;
+
+}
